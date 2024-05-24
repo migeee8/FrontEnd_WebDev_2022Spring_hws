@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>京韵</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/aside.css" />
+  <link rel="stylesheet" href="css/all.css" />
+
+</head>
+
+<body>
+  <script>
+    function menu_active(ulId){
+	if(ulId.style.display == "none"){
+		ulId.style.display = "block"
+	}else{
+		ulId.style.display = "none"
+	}
+}
+  </script>
+  <div id="container">
+    <!-- 最外层容器 -->
+    <aside>
+      <div class="logo">
+        <a href="#"><img src=""></a>
+      </div>
+      <ul class="ulList">
+        <li class="liList">
+          
+          <a href="index.html">&nbsp&nbsp<img src="img/home.svg" alt="">首页</a>
+          <ul class="childUl" id="ulOne">
+            <li><a href="#b1">&nbsp&nbsp&nbsp&nbsp京韵</a></li>
+            <li><a href="#b2">&nbsp&nbsp&nbsp&nbsp京气</a></li>
+            <li><a href="#b3">&nbsp&nbsp&nbsp&nbsp京角</a></li>
+          </ul>
+        </li>
+        <li class="liList">
+          <a href="page2.html">&nbsp&nbsp<img src="img/Zoom.svg" alt="">戏曲欣赏</a>
+        </li>
+        <li class="liList">
+          <a href="log.html">&nbsp&nbsp<img src="img/navigation.svg" alt="">登录</a>
+        </li>
+        <li class="liList">
+          <a href="#" onclick="menu_active(ulFour)">&nbsp&nbsp<img src="img/profile.svg" alt="">关于作者</a>
+          <ul class="childUl" id="ulFour" style="display:none">
+            <li><img src="img/personal.jpg" alt=""></li>
+            <li>@计算机213冯思敏<br />学号:211001116</li>
+          </ul>
+        </li>
+      </ul>
+    </aside> <!--  导航栏 -->
+
+
+    <div class="content">
+      <!-- 主体区域 -->
+      <main>
+        <div class="box1" id="b1">
+          <header>
+            <div class="search-box">
+              <input class="search-txt" type='text' id='inp' />
+              <button id="btn"><img src="img/search.jpg" alt="search"></button>
+            </div>
+          </header> <!-- 搜索栏 -->
+          <div class="biaoti">
+            <img src="img/logo_852x425_506x252.png" alt="京韵">
+          </div>
+          
+        </div>
+        <video id="anime" src="img/动画.mp4" loop autoplay muted></video>
+
+        <div class="box2" id="b2">
+          <div class="grid-container">
+            <div class="grid-item">
+              <h2>京剧简介</h2>
+              <p>京剧，又称平剧、京戏等，中国国粹之一，是中国影响最大的戏曲剧种，分布地以北京为中心，遍及全国各地。 
+                清代乾隆五十五年（1790年）起，原在南方演出的三庆、四喜、春台、和春等多以安徽籍艺人为主的四大徽班陆续进入北京，与来自湖北的汉调艺人合作，同时接受了昆曲、秦腔的部分剧目、曲调和表演方法，又吸收了一些地方民间曲调，通过不断的交流、融合，最终形成京剧。
+              </p>
+            </div>
+            <div class="grid-item">
+              <h2>舞台道具</h2>
+              <p>"戏曲舞台上并不回避“露假”，也不要求一一写实。扬鞭以代马，摇桨以代船。"</p>
+              <p>砌末是大小道具与一些简单装置的统称，是戏曲解决表演与实物矛盾的特殊产物。传统戏曲舞台上的砌末包括生活用具，以及表现环境、点染气氛的种种物件（如布城、大帐、小帐、门旗、纛旗、桌围椅披）等。除常用的砌末之外，也可根据演出需要临时添置。</p>
+              <p>在演员没有上场以前，桌椅只是一种抽象的摆设。如演出皇帝视朝，这张桌子便成了视朝时所需的御案；县宫坐衙，这张桌子便成了坐衙时所需的公案；朋友宴会，便成了宴会时所需要的酒席。以上是实物实用，但戏曲舞台上的桌椅还可以做代用品。比如用桌子代替山石，人要上山，就站在桌子上，如果这山很高，就用两张桌子叠起来。要跳墙，就用桌子当墙；要睡觉，将身伏在桌上，用手支住头。至于椅子所代替的就更多了。舞台上表示从矮山爬到高山去，是从椅子了再登到桌子上，椅子还可以代替窑门，代替牢门等等。桌椅无论代表什么，都是妙在似与不似之间。如戏曲中的布城虽然比较简陋，但决不追求城的真实再现。布城可以根据城的需要自由调度。</p>
+              <p>旗帜在舞台上使用很多，如正方形帅字旗、长方形三军令旗、大纛旗（古代军队里的大旗），都是表示元帅及大本营所在地的。还有水旗、火旗、风旗、车旗等等，这些旗帜是在白色方旗上绘绿色水纹、火焰、风、车轮等等。演员执旗，略微颤动，就可以表示波浪起伏、着火、起风、乘车。</p>
+            </div>
+            <div class="grid-item" id="theone">
+              <img src="img/grid.png" alt="">
+            </div>
+            <div class="grid-item" id="mask-grid1"><img src="img/mask1.png" alt=""><img src="img/mask2.png" alt=""></div>     
+            <div class="grid-item">
+              <h2>表现形式</h2>
+              <p>京剧表演的四种艺术手法：唱、念、做、打，也是京剧表演四项基本功。</p>
+              <p>唱指歌唱，念指具有音乐性的念白，二者相辅相成，构成歌舞化的京剧表演艺术两大要素之一的“歌”，做指舞蹈化的形体动作，打指武打和翻跌的技艺，二者相互结合，构成歌舞化的京剧表演艺术两大要素之一的“舞”。</p>
+              <p>戏曲演员从小就要从这四个方面进行训练，虽然有的演员擅长唱功（唱功老生），有的行当以做功（花旦）为主，有的以武打为主（武净）。但是要求每一个演员必须有过硬的唱、念、做、打四种基本功。</p>
+            </div>
+            <div class="grid-item">
+              <img src="img/京剧道具.png" alt="">
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="box3" id="b3">
+          <div class="one" id="part1">
+            <div class="img">
+              <div class="wrap">
+                <img src="img/武生.gif" alt="生">
+                <div class="text">
+                    <h1>生行</h1>
+                    <p> 生行分为须生(老生)、红生、小生、武生、娃娃生等。为京剧中的重要行当之一。须生(老生)：即中年以上的剧中人，口戴胡子(髯口)，因性格与身份的不同，可分为安工老生或称唱工老生(如扮演帝王、官僚、文人等)，靠把老生(如扮演武将)，衰派老生(如扮演穷困潦倒之人等)。 红生：为勾红脸的须生，如扮演关羽、赵匡胤等。 小生：指演剧中的翎子生(带雉翎的大将，王侯等)，纱帽生(官生)、扇子生(书生)、穷生(穷酸文人)等。 武生：为戏中的武打角色，穿厚底靴的叫长靠(墩子)武生，穿薄底靴的称短打(撇子)武生。</p>
+                </div>
+              </div>
+                <div class="wrap">
+                  <img src="img/旦角.gif" alt="旦">
+                  <div class="text">
+                      <h1>旦行</h1>
+                      <p> 分青衣、花旦、武旦、刀马旦、老旦、贴旦、闺旦等角色。旦角全为女性。 青衣：以唱为主，扮演贤妻良母型角色。花旦：亦叫花衫，以服装花艳为特色，以演皇后、公主、贵夫人、女将、小贩、村姑等角色为主。 武旦、刀马旦：为演武功见长的女性。 老旦：用本噪子演唱，多为中老年妇女。 </p>
+                  </div>
+              </div>
+              <div class="wrap">
+                <img src="img/净角.gif" alt="净">
+                <div class="text">
+                    <h1>净行</h1>
+                    <p> 亦叫花脸。净角指脸画彩图的花脸角色，看来并不干净，故反其意为‘‘净”净行分如下几种角色：以唱为主的铜锤花脸与黑头花脸；以工架为主的架子花脸，如大将、和尚、绿林好汉及武花脸与摔打花脸等。铜锤花脸称正净，架子花脸叫副净、武工花脸名武净，武二花脸言红净，在表演风格上均有不同的特色。</p>
+                </div>
+            </div>
+            <div class="wrap">
+              <img src="img/丑角.gif" alt="丑">
+              <div class="text">
+                  <h1>丑行</h1>
+                  <p> 剧中丑行勾脸，而勾画“三花脸”，面谱与花脸有很大区别。 丑行又分文丑、武丑。文丑中又分为方巾丑(文人，儒生)；武丑，专演跌、打、翻、扑等武技角色。根据动物属相，丑属牛，牛性笨，丑为笨的代名词。但舞台上的武丑亦叫开口跳，而能说能跳，表演出活泼伶俐，善演武功武技的角色，此与牛的丑笨性又完全不同。</p>
+               </div>
+            </div>
+            <div class="intro">
+                <h2>行当</h2>
+                <p>生、旦、净、丑各个行当都有各自的形象内涵和一套不同的程式和规制；每个行当具有鲜明的造型表现力和形式美。左图对主要行当作个简要的介绍。由于戏曲人物思想情感的内在特征必须加以外化，并从程式上对其进行提炼和规范，这就会使唱念做打各类程式无不带有某种性格的色彩。经过长期的艺术磨炼，一些性格相近的艺术形象以及与之相应的表演程式、表演手法和技巧便逐渐积累、汇集且相对地稳定，这就是行当的形成。而当一个行当形成以后，它所积累的表演程式又可作为创造新的形象的手段。如此循环往复，不断创造、不断发展，促使了行当体制的逐步丰富和完善。可以说，行当这种表演体制，是戏曲表演程式创造形象的结果，又是形象再创造的出发点。</p>
+            </div>
+          </div>
+          </div>
+          <div class="one" id="part2">
+           <div class="text">
+             <h2>唱腔</h2>
+            <p>在戏曲音乐结构中，声乐部分是它的主体。中国传统美学思想认为人声歌唱比器乐伴奏更为亲切动人，更易唤起观众的理解与共鸣。其原因在于乐器所奏出的音乐，虽然也能传情，却不能表意。戏曲音乐刻画人物形象，主体依靠声乐，即优美的唱腔与动人的演唱。戏曲中无论演唱的是曲牌还是板腔，都可以分为抒情性唱腔、叙事性唱腔和戏剧性唱腔。抒情性唱腔的特点是字少声多，旋律性强，长于抒发内在的感情；叙事性唱腔的特点为字多声少，朗诵性强，适用于叙述、对答的场合；戏剧性唱腔多为节拍自由的散板，节奏的伸缩有极大灵活性，因而长于表现激昂强烈的感情。这三类曲调的交替运用，构成了戏曲音乐变化多端的戏剧性。中国戏曲有很多传统剧目，其所以能在舞台上久唱不衰，主要得力于其中脍炙人口的唱腔。
+              京剧的主要唱腔就两种，一种是“西皮”，一种是“二黄”。
+
+              “西皮”与“二黄”这两种唱腔最明显的不同就在音律，其中，“西皮”的曲调比较明快亮丽，而“二黄”的曲调则比较低沉悲婉。
+              
+              并且“西皮”在板式上是眼起板落，即敲鼓开唱，打板收音，而“二黄”则是板起板落，开唱与收音都在打板上，这也是两者的一个重要区别。
+            </p>
+           </div>
+           <img src="img/box3-b.png" alt="">
+          </div>
+
+         </div>
+      </main> <!-- 主要内容 -->
+      <footer>
+      <h2>制作：北林21届计算机类213--冯思敏</h2>
+      </footer>
+    </div>
+
+  </div>
+</body>
+
+</html>
+

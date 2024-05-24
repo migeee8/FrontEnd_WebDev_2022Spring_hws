@@ -1,0 +1,85 @@
+aside {
+	position:fixed;
+	display: flex;
+	top: 0;
+    left: 0;
+	width: 200px;
+	height: 100vh;
+	background: rgb(241, 240, 240);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.ulList{
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.liList{
+	
+	width: 100%;
+	line-height: 80px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+
+.liList a{
+	font-size: 20px;
+	text-decoration: none;
+	font-family:Microsoft JhengHei;
+	color: black;
+}
+
+
+.liList a:hover{
+    background-color: rgb(106, 50, 36);
+	color: azure;
+	transition: 0.1s;
+}
+.liList ul{
+	width: 100%;
+	position:relative;
+}
+.liList ul li{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.liList ul li a{
+    height: 100%;
+	text-decoration: none;
+    font-size: 16px;
+}
+.liList ul li a:hover{
+    background-color: rgb(150, 88, 73);
+	color: rgb(250, 209, 209);
+	transition: 0.1s;
+}
+#ulFour{
+	
+	text-align: center;
+}
+
+#ulFour img{
+    width:80px;
+	height:80px;
+	border-radius: 40px;
+	border: 3px;
+	border-color:chocolate;
+	position: relative;
+	left:40px;
+	top:5px;
+}
+#ulFour li{
+    margin-top: 30px;
+	line-height: 16px;
+	font-size: 10px;
+}

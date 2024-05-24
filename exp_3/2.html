@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var oldarr = [1, 1, 2, 2, 2, 3, 5, 7, 9];
+        var newarr = [];
+        console.log(oldarr);
+        newarr = f(oldarr);
+        console.log(newarr);
+		//最终使得数组newarr结果为[1, 2, 3, 5, 7, 9];
+		function f(xarr) {
+            var yarr = [];
+            var j=1;
+            for(let i=0,len=xarr.length;i<len;i++){
+                for(let j=i+1;j<len; j++){
+                    if(xarr[j]==xarr[i]) ++i;}
+             yarr.push(xarr[i]);
+            }           
+            return yarr;}
+
+    </script>
+</body>
+</html>
